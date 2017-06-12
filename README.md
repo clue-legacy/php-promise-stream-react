@@ -1,4 +1,33 @@
-# clue/promise-stream-react [![Build Status](https://travis-ci.org/clue/php-promise-stream-react.svg?branch=master)](https://travis-ci.org/clue/php-promise-stream-react)
+# Deprecation notice
+
+This package has now been migrated over to
+[react/promise-stream](https://github.com/reactphp/promise-stream)
+and only exists for BC reasons.
+
+```bash
+$ composer require react/promise-stream
+```
+
+If you've previously used this package, upgrading should take no longer than a few minutes.
+All functions have been merged as-is from the latest v0.1.2 release with no other changes,
+so you can simply update your code to use the updated namespace like this:
+
+```php
+// old from clue/promise-stream-react
+\Clue\React\Promise\Stream\buffer(…);
+
+// new
+\React\Promise\Stream\buffer(…);
+```
+
+See [react/promise-stream](https://github.com/reactphp/promise-stream) for more details.
+
+The below documentation applies to the last release of this package.
+Further development will take place in the updated
+[react/promise-stream](https://github.com/reactphp/promise-stream),
+so you're highly recommended to upgrade as soon as possible.
+
+# Legacy clue/promise-stream-react [![Build Status](https://travis-ci.org/clue/php-promise-stream-react.svg?branch=master)](https://travis-ci.org/clue/php-promise-stream-react)
 
 The missing link between Promise-land and Stream-land, 
 built on top of [React PHP](http://reactphp.org/).
